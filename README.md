@@ -21,7 +21,7 @@ Nesse exemplo não é difícil identificar que a caminho crítico para conclusã
 Lógica de Programação → Engenharia de Software → Sistemas Web e Mobile. Como cada tarefa demanda um tempo de um período, o tempo mínimo de conclusão do projeto é três períodos.
 A tarefa de encontrar o caminho crítico de um projeto, dados suas etapas, duração prevista e dependências pode ser automatizada através de algoritmos em grafos. O exemplo anterior poderia ser representado como um grafo da seguinte forma:
 
-![toy_graph]([https://github.com/user-attachments/assets/ab91550f-44dc-43ea-b51d-618bdcb37511](https://github.com/user-attachments/assets/970bfffe-cadc-4def-afbe-e61f30017160))
+![toy_graph](https://github.com/user-attachments/assets/970bfffe-cadc-4def-afbe-e61f30017160)
 
 Cada nó representa o início de uma etapa e as arestas informam as relações de dependências. O peso de cada aresta é dado pelo tempo que a tarefa origem leva para ser concluída. Temos ainda dois nós adicionais, s indicando o início do projeto e t indicando a conclusão de tarefas. O nó s se liga diretamente a todas as tarefas sem dependências e todas as tarefas se ligam ao nó t. A caminho crítico é dado pelo caminho máximo de s a t nesse grafo, ressaltado pelos nós em verde.
 
