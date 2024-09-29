@@ -100,14 +100,14 @@ def main():
             G = construir_grafo(tarefas, dependencias)
             caminho_critico, duracao_total = encontrar_caminho_critico(G)
             
-            # Visualizar o grafo
-            visualizar_grafo(G)
-            
             print("\nCaminho Crítico:")
             for tarefa in caminho_critico:
                 print(f"- {tarefa}")
             
             print(f"\nTempo Mínimo: {duracao_total}\n")
+            
+            # Visualizar o grafo
+            visualizar_grafo(G)
 
         except FileNotFoundError:
             print("Arquivo não encontrado. Tente novamente.")
